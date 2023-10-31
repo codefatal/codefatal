@@ -11,6 +11,7 @@ Email : eziofatal@gmail.com <br/>
  <br/>
  
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=codefatal)](https://github.com/anuraghazra/github-readme-stats)
+[![Solved.ac 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=YooSuHyeon)](https://solved.ac/codesh000)
 # 💪Skills
 ### Platforms & Languages
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white)
