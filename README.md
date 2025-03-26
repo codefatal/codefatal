@@ -42,7 +42,7 @@ Email : eziofatal@gmail.com <br/>
 
 # Projects
 * LG U+ AlphaKey SSO 파트 개발
-- 기간 : 2024.01 ~ 
+- 기간 : 2024.01 ~ 2025.03
 - 사용 기술: Java, MariaDB, MyBatis, Redis, SAML, OIDC, JWT
 - 주요 기능:
   - SAML, OIDC 기반 외부 SaaS 앱과 연동이 가능하도록 기존 솔루션 로직 수정 및 연동 작업 진행 (총 80개) - 기존 솔루션 활용(MagicSSO)
