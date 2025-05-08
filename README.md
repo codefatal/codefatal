@@ -45,13 +45,19 @@ Email : eziofatal@gmail.com <br/>
 - 기간 : 2024.01 ~ 2025.03
 - 사용 기술: Java, MariaDB, MyBatis, Redis, SAML, OIDC, JWT
 - 주요 기능:
-  - SAML, OIDC 기반 외부 SaaS 앱과 연동이 가능하도록 기존 솔루션 로직 수정 및 연동 작업 진행 (총 80개) - 기존 솔루션 활용(MagicSSO)
+  - SAML, OIDC 기반 외부 SaaS 앱과 연동이 가능하도록 기존 솔루션 로직 수정 및 연동 작업 진행 (총 80개) 
+    (기존 솔루션 활용(MagicSSO))
   - Redis를 활용한 세션 클러스터링 진행
-  - AlphaKey 관리자 메뉴(앱 관리, 이상접속 내역, 감지정책) API 및 DB 쿼리 개발
-  - 감지 정책(퇴사자, 해외IP 접속, 비정상적인 이동 접속) 로직 구현
+  - AlphaKey 관리자 메뉴 API 및 DB 쿼리 개발
+    (앱 관리, 이상접속 내역, 감지 정책, 해외IP 접근 예외ID 정책, 차단 지역 정책)
+  - 감지 정책의 기본 정책에 대한 로직 구현
+    (퇴사자 계정 확인, 해외 IP 차단, 비정상 이동 접속 확인, 차단 지역)
   - 해외IP 접근 예외ID 추가, 수정, 삭제 로직 구현
   - 국가 기반 차단 정책 로직 구현
   - 사용자 로그인 시 정책 검증 로직 구현
+ 
+![image](https://github.com/user-attachments/assets/3c429c75-8936-49aa-a33e-daa84c12c6d1)
+
 
 
 <br/>
