@@ -11,7 +11,7 @@ Name : 유수현 (YooSuHyeon) <br/>
 Email : eziofatal@gmail.com <br/>
  <br/>
  
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=codefatal)](https://github.com/anuraghazra/github-readme-stats)
+[![Anurag's GitHub stats](https://github-readme-stats-fast.vercel.app/api?username=codefatal)](https://github.com/anuraghazra/github-readme-stats)
 [![Solved.ac 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=codesh000)](https://solved.ac/codesh000)
 # 💪Skills
 ### Platforms & Languages
