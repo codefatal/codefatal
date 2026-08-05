@@ -4,8 +4,8 @@
 **"보안과 운영의 관점으로 인증·세션·데이터 흐름을 설계하는 Java 백엔드 개발자 유수현입니다."** <br/>
 
 서버 운영, 보안관제, 보안제품 QA 경험을 거쳐 현재는 SSO·IDaaS 분야의 Java 백엔드 개발을 담당하고 있습니다. <br/>
-LG U+ AlphaKey SSO에서 구축형 MagicSSO를 AWS 상용 클라우드에 맞는 REST API·분산 세션 구조로 전환하고, SAML·OAuth2/OIDC 기반 SaaS 연동, 접속 보안 정책, OpenAPI Gateway, JWT ID Only 및 SAML SP 기능을 개발했습니다. <br/>
-NCP 공공 클라우드 프로젝트에서는 GeoLocation 미지원 기능 분리, CSAP 소스 취약점 조치, `USER_ID → USER_NO` 식별 구조 전환과 개인정보 파기·감사 이력 보존을 위한 백엔드 리팩토링을 수행했습니다.
+LG U+ AlphaKey SSO의 AWS 상용 프로젝트에서 구축형 MagicSSO를 Cloud·REST API 구조로 전환하고, OpenAPI·JWT·SAML SP 확장과 GeoIP·인증 보안·운영 고도화까지 3차례의 개발 단계를 이어가고 있습니다. <br/>
+NCP 공공 클라우드 프로젝트에서는 GeoLocation 미지원 기능 분리, CSAP 소스 취약점 조치, `USER_ID → USER_NO` 식별 구조 전환과 개인정보 파기·감사 이력 보존을 위한 백엔드 리팩토링을 수행하고 있습니다.
 
 ### 🦸‍♂️ Profile
 - **Name** : 유수현 (Yoo Suhyeon)
@@ -56,20 +56,21 @@ NCP 공공 클라우드 프로젝트에서는 GeoLocation 미지원 기능 분�
 # 🚀 Projects
 
 ### 1. LG U+ AlphaKey SSO - AWS 상용 클라우드 및 OpenAPI 고도화
-- **기간:** 2024.04 ~ 현재
+- **기간:** 2024.04 ~ 진행 중
+- **진행 단계:** 1차 Cloud·REST API 전환 → 2차 OpenAPI·JWT·SAML SP 확장 → 3차 GeoIP·인증 보안·운영 고도화
 - **기술 스택:** Java 8, Servlet, Tomcat 9, Spring Boot, MyBatis, MariaDB, Redis·Redisson, AWS EKS, Kubernetes, Docker, SAML, OAuth2/OIDC, JWT, Splunk, CloudWatch, Kafka, MaxMind GeoIP, Postman
 - **역할:** SSO·IDaaS 백엔드 API, 인증·세션, 접속 보안 및 OpenAPI 기능 개발
 - **주요 업무 및 결과:**
   - Docker·AWS EKS CI와 CodeQL 기반 배포 구성을 정리하고, Redisson 기반 Tomcat 세션 공유를 적용해 Kubernetes Pod 간 로그인 세션을 유지할 수 있는 기반을 구축했습니다.
   - JSP·레거시 Controller 중심 기능을 Servlet REST API와 Controller·Service·DAO·MyBatis Mapper 구조로 전환하고 테넌트·앱·인증서·Redirect URI·Scope 관리 기능을 재구성했습니다.
-  - SAML·OAuth2/OIDC 표준 엔드포인트와 앱별 Metadata·Assertion·Attribute·Claim 검증을 개발하고, 연동 대상 90여 개 중 50여 개 SaaS 연동 로직을 구현했습니다.
+  - SAML·OAuth2/OIDC 표준 엔드포인트와 앱별 Metadata·Assertion·Attribute·Claim 검증을 개발하고, 80여 개 이상 SaaS 연동을 수용하는 설정·커스텀 처리 기반을 마련하고, 이 중 50여 개 연동 로직을 구현했습니다.
   - 사용자·앱 감지정책, 이상접속 이력, 해외 IP 예외, 국가·차단 지역과 비정상 이동 접속 등 GeoIP 기반 로그인 보안 기능을 개발했습니다.
   - OpenAPI Gateway의 Token·Route·Config·Rate Limit·Metric·Redis Reload와 JWT ID Only 로그인을 구현했습니다.
   - 외부 IdP 인증을 AlphaKey 내부 세션으로 연결하는 SAML SP 모드와 Response·Assertion 서명, 재사용 방지 및 OIDC 보안 검증을 고도화했습니다.
   - Naver GeoLocation 종료에 대응해 MaxMind로 전환하고, 외부 API 장애 시 로그인은 유지하면서 위치 기반 정책의 오판을 방지하는 예외 흐름을 구성했습니다.
 
 ### 2. LG U+ AlphaKey SSO - NCP 전환 및 CSAP 보안 대응
-- **기간:** 2025.10 ~ 2026.05
+- **기간:** 2025.10 ~ 진행 중
 - **기술 스택:** Java 8, Servlet, Tomcat 9, MyBatis, MariaDB, Redis, NCP, CSAP, SAML, OIDC, Postman
 - **역할:** NCP 환경 분기, 데이터 식별 구조 리팩토링 및 CSAP 소스 보안 조치
 - **주요 업무 및 결과:**
